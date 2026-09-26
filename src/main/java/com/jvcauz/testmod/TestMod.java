@@ -1,5 +1,7 @@
-package com.example.com.jvcauz.testmod;
+package com.jvcauz.testmod;
 
+import com.jvcauz.testmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -33,6 +35,8 @@ public class TestMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -55,6 +59,10 @@ public class TestMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        // ADICIONA PANCaKeS PARA ABA INGREDIENTS
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.PANCAKES);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
