@@ -2,8 +2,6 @@ package com.jvcauz.testmod.block;
 
 import com.jvcauz.testmod.TestMod;
 import com.jvcauz.testmod.item.ModItems;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;

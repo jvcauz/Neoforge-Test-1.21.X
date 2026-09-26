@@ -12,7 +12,7 @@ public class ModItems {
 
     // CRIANDO O ITEM PANCaKeS
     public static final DeferredItem<Item> PANCAKES = ITEMS.register("pancakes",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.PANCAKES)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
