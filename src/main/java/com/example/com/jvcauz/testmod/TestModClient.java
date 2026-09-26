@@ -1,4 +1,4 @@
-package com.example.com.jvcauz.examplemod;
+package com.example.com.jvcauz.testmod;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;

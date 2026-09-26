@@ -1,4 +1,4 @@
-package com.example.com.jvcauz.examplemod;
+package com.example.com.jvcauz.testmod;
 
 import org.slf4j.Logger;
 
