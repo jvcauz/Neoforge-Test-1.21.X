@@ -1,5 +1,6 @@
 package com.jvcauz.testmod;
 
+import com.jvcauz.testmod.block.ModBlocks;
 import com.jvcauz.testmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -36,6 +37,7 @@ public class TestMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -62,6 +64,10 @@ public class TestMod {
         // ADICIONA PANCaKeS PARA ABA INGREDIENTS
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.PANCAKES);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
+            event.accept(ModBlocks.REPLOON);
         }
     }
 

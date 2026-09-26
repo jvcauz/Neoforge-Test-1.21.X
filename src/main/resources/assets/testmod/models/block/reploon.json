@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "testmod:block/reploon_bottom",
+    "side": "testmod:block/reploon_side",
+    "top": "testmod:block/reploon_top"
+  }
+}

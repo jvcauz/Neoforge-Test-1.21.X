@@ -10,7 +10,6 @@ public class ModItems {
     // ITEMS
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TestMod.MODID);
 
-
     // CRIANDO O ITEM PANCaKeS
     public static final DeferredItem<Item> PANCAKES = ITEMS.register("pancakes",
             () -> new Item(new Item.Properties()));
