@@ -1,5 +1,7 @@
 {
   "item.testmod.pancakes": "PANCaKeS",
 
-  "block.testmod.reploon": "Reploon"
+  "block.testmod.reploon": "Reploon",
+
+  "creativetab.testmod.testmod_general": "Test Mod"
 }
